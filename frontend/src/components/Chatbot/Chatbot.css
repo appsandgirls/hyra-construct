@@ -1,0 +1,103 @@
+/* Chatbot.css */
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh; /* 80% of the viewport height */
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f4f4f4;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent content overflow */
+ z-index: 1000; /* Ensures it's on top of other elements */}
+
+.chat-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between messages */
+  padding: 10px;
+}
+
+.chat-bubble {
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 90%;
+  margin-bottom: 8px;
+}
+
+.chat-bubble.user {
+  align-self: flex-end;
+  background-color: #2d2d2d;
+  color: #f4f4f4;
+}
+
+.chat-bubble.ai {
+  align-self: flex-start;
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.chat-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chat-footer input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #f4f4f4;
+  margin: 10px;
+}
+
+.chat-footer button {
+    width: 20%;
+  padding: 10px 15px;
+  border: none;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.chat-footer button:hover {
+  background-color: #000000;
+}
+
+/* Button for toggling the chatbot */
+.chatbot-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 150px;
+  height: 50px;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 10px;
+  border-radius: 100px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-toggle-btn:hover {
+  background-color: #000000;
+}

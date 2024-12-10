@@ -1,0 +1,66 @@
+/* SustainableSuggestions.css */
+.sustainable-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sustainable-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.suggestions-result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9ffe9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.suggestions-result h3 {
+  margin-bottom: 10px;
+}
+
+.suggestions-result ul {
+  list-style: disc;
+  margin-left: 20px;
+}
